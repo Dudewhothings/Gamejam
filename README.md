@@ -19,18 +19,28 @@ Maneuver through three unique dead world levels, each representing a different f
 
 ## Implementation
 **Features**
+* User operated player with basic movement, three navigable levels, threatening enemies
 
 **Assets or resources used**
+* Built using [Godot 3.2.3](https://godotengine.org/article/maintenance-release-godot-3-2-3)
+* Player model made using [Pixel Art](https://www.pixilart.com/)
+* Music made with [Muse Score 3.6.2](https://musescore.org/en/3.6.2)
 
 ## References
 
 ## Future Development
+Unsure
 
 # Created by The Dead Men
 **Schoonover, Kevin**
+* State machine
 
 **Robbins, Xander**
+* Story idea, player name
 
 **Robertson, Jacob**
+* Level design
 
 **Kaliczak, Alexander**
+* Player model
+* Music, made by my wife Aeris Kaliczak
