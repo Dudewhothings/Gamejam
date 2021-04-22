@@ -27,6 +27,9 @@ func _process(delta):
 	if direction < 0 and not $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = true
 	if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false
 	BackupCam.position = position
+	if(current_health <= 0):
+		die()
+	
 
 func is_moving():
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
