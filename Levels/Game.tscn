@@ -621,7 +621,7 @@ tile_set = SubResource( 1 )
 collision_layer = 0
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 65549, 2, 0, 65582, 2, 0, 327720, 3, 0 )
+tile_data = PoolIntArray( 25, 2, 0, 65549, 2, 0, 65571, 3, 0, 65582, 2, 0, 65600, 3, 0, 65620, 3, 0, 65631, 2, 0, 131144, 2, 0, 262198, 3, 0, 262220, 0, 0, 327720, 3, 0, 458784, 4, 0, 458813, 2, 0, 589833, 0, 0, 720966, 0, 0 )
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource( 19 )
