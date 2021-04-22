@@ -1,20 +1,33 @@
 extends KinematicBody2D
 
+var player = null
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var speed = 150
+export var looking_speed = 25
+var line_of_sight = false
 
+export var looking_color = Color(0.455,0.753,0.988,0.25)
+export var los_color = Color(0.988,0.753,0.455,0.5)
 
-# Called when the node enters the scene tree for the first time.
+var points = []
+const margin = 1.5
+
 func _ready():
-	pass # Replace with function body.
+	if get_node_or_null("/root/World/Player_Container/Player") == null:
+		print("Player Not Found")
+	else:
+		print("Player Found")
 
+func _physics_process(_delta):
+	var velocity = Vector2.ZERO
+	if player == null:
+		player = get_node_or_null("/root/World/Player_Container/Player")
+	else:
+		velocity = position.direction_to(player.position) * speed
+		move_and_slide(velocity, Vector2.UP)
+		update()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
-func _on_DamageBox_body_entered(body):
-	print(body.name)
+func _on_DamageBox_body_exited(body):
+	if body.name == 'Player':
+		print("Player hit")
+		#queue_free()

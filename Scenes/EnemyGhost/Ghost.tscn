@@ -36,4 +36,4 @@ collision_mask = 2
 
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="DamageBox"]
 shape = SubResource( 3 )
-[connection signal="body_entered" from="DamageBox" to="." method="_on_DamageBox_body_entered"]
+[connection signal="body_exited" from="DamageBox" to="." method="_on_DamageBox_body_exited"]

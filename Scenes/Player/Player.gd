@@ -2,20 +2,22 @@ extends KinematicBody2D
 
 onready var SM = $StateMachine
 onready var BackupCam = get_node("/root/World/Player_Container/BackupCamera")
+
+#Movement Variables
 var velocity = Vector2.ZERO
 var jump_power = Vector2.ZERO
 var direction = 1
-
 export var gravity = Vector2(0,30)
-
 export var move_speed = 50
 export var max_move = 500
-
 export var jump_speed = 200
 export var max_jump = 2000
-
 export var leap_speed = 500
 export var max_leap = 2500
+
+#Other Variables
+export var max_health = 10
+export var current_health = 10
 
 func _ready():
 	pass
