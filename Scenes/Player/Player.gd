@@ -22,7 +22,7 @@ export var current_health = 10
 func _ready():
 	pass
 
-func _process(delta):
+func _process(_delta):
 	velocity.x = clamp(velocity.x,-max_move,max_move)
 	if direction < 0 and not $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = true
 	if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false

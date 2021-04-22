@@ -57,10 +57,10 @@ func _physics_process(_delta):
 			move_and_slide(Velocity, Vector2.UP)
 
 
-func _on_SearchBox_body_entered(body):
+func _on_SearchBox_body_entered(_body):
 	playerInRange = true
 	
-func _on_SearchBox_body_exited(body):
+func _on_SearchBox_body_exited(_body):
 	playerInRange = false
 
 func _on_hit_timer_timeout():

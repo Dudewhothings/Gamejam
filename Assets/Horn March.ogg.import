@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Horn March.ogg-0c58f6ea038fc21a7ff91a34e85470dd.oggstr"
+
+[deps]
+
+source_file="res://Assets/Horn March.ogg"
+dest_files=[ "res://.import/Horn March.ogg-0c58f6ea038fc21a7ff91a34e85470dd.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
