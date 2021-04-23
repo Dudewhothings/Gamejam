@@ -1,10 +1,10 @@
 extends Node
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+var playerlives = 10
+var LvlOneComplete = false
+var LvlTwoComplete = false
+var LvlThreeComplete = false
+var currentlevel = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,5 +12,14 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if(playerlives <= 0):
+		print("lost")
+
+func resetgame():
+	playerlives = 10
+	LvlOneComplete = false
+	LvlTwoComplete = false
+	LvlThreeComplete = false
+	currentlevel = 1
+	get_tree().change_scene("res://Levels/LevelOne.tscn")
