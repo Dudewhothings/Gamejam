@@ -25,7 +25,7 @@ The theme is Every Death Counts
 * Built using [Godot 3.2.3](https://godotengine.org/article/maintenance-release-godot-3-2-3)
 * Player model made using [Pixel Art](https://www.pixilart.com/)
 * Music made with [Muse Score 3.6.2](https://musescore.org/en/3.6.2)
-* Font Upheaval  Created by Brian Kent
+* Font [Upheaval](https://www.dafont.com/upheaval.font) Created by Brian Kent
 
 ## References
 
