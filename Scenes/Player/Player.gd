@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 onready var SM = $StateMachine
 onready var BackupCam = get_node("/root/World/Player_Container/BackupCamera")
-var tombstone = preload("res://Scenes/Tombstone/Tombstone.tscn")
+
 #Movement Variables
 var velocity = Vector2.ZERO
 var jump_power = Vector2.ZERO
@@ -16,13 +16,13 @@ export var leap_speed = 500
 export var max_leap = 2500
 
 #Other Variables
-export var max_health = 5
-export var current_health = 3
+export var max_health = 10
+export var current_health = 10
 
 func _ready():
 	pass
 
-func _process(delta):
+func _process(_delta):
 	velocity.x = clamp(velocity.x,-max_move,max_move)
 	if direction < 0 and not $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = true
 	if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false
@@ -51,13 +51,6 @@ func _unhandled_input(event):
 	if event.is_action_pressed("right"):
 		direction = 1
 		
-func spawntombstone():
-	var tomb = tombstone.instance()
-	tomb.position = global_position
-	get_parent().add_child(tomb)
-
 func die():
 	BackupCam.current = true
-	spawntombstone()
-	Global.playerLives += -1
 	queue_free()
