@@ -52,7 +52,14 @@ W : Jump
 A : Left
 D : Right
 Esc : menu
+Goal:
+Reach the end.
+Kill player to
+make blocks!
 "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Quit" type="Button" parent="."]
 margin_left = 32.0
