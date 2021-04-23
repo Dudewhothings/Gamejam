@@ -36,6 +36,7 @@ Unsure
 **Schoonover, Kevin**
 * State machine
 * Game mechanics
+* Code advisor
 
 **Robbins, Xander**
 * Story idea
