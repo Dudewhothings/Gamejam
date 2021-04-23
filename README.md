@@ -37,6 +37,7 @@ Unsure
 * State machine
 * Game mechanics
 * Code advisor
+* Added typeface
 
 **Robbins, Xander**
 * Story idea
