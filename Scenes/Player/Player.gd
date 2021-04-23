@@ -18,7 +18,7 @@ export var max_leap = 2500
 #Other Variables
 export var max_health = 5
 export var current_health = 3
-
+export var isAlive = true
 func _ready():
 	pass
 
@@ -57,7 +57,8 @@ func spawntombstone():
 	get_parent().add_child(tomb)
 
 func die():
-	BackupCam.current = true
+	#BackupCam.current = true
+	isAlive = false
 	spawntombstone()
 	Global.playerlives += -1
-	queue_free()
+	

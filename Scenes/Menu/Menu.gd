@@ -4,11 +4,11 @@ extends Control
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
+var player = null
+func _process(delta):
+	if player == null:
+		player = get_node_or_null("/root/World/Player_Container/Player")
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
 
 func _unhandled_input(event):
 	if event.is_action_pressed("menu"):
@@ -36,3 +36,6 @@ func _on_Restart_Level_pressed():
 func _on_Reset_pressed():
 	Global.resetgame()
 	
+
+func _on_Killself_pressed():
+	player.current_health = 0
