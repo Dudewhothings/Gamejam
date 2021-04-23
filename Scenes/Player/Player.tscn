@@ -1,7 +1,7 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Assets/player.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Player/StateMachine.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/Player/Idle.gd" type="Script" id=4]
 [ext_resource path="res://Scenes/Player/Jumping.gd" type="Script" id=5]
@@ -9,24 +9,14 @@
 [ext_resource path="res://Scenes/Player/Moving.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/Player/Falling.gd" type="Script" id=8]
 
-[sub_resource type="AtlasTexture" id=1]
-flags = 4
-atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 64, 64 )
-
-[sub_resource type="AtlasTexture" id=2]
-flags = 4
-atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 64, 64 )
-
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "Jumping",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 1 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "Falling",
 "speed": 5.0
@@ -36,14 +26,14 @@ animations = [ {
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 2 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "Moving",
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 30, 30 )
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 22, 32 )
 
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
@@ -69,12 +59,11 @@ script = ExtResource( 6 )
 script = ExtResource( 8 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-self_modulate = Color( 1, 0, 0, 1 )
-frames = SubResource( 3 )
+frames = SubResource( 1 )
 animation = "Moving"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
