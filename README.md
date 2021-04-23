@@ -10,10 +10,10 @@ The theme is Every Death Counts
 
 ## Game Play
 **Objective**
-Play as our protagonist, Issac Robertson, a war veteran overcome by despair. The last surviving member of his troop as he tries to help his comrades pass on.
+* Play as our protagonist, Issac Robertson, a war veteran overcome by despair. The last surviving member of his troop as he tries to help his comrades pass on.
 
 **Game-play instructions**
-Maneuver through three unique dead world levels, each representing a different fallen friend's purgatory. Locate their item, and bring it to their grave. 
+* Maneuver through three unique dead world levels, each representing a different fallen friend's purgatory. Locate their item, and bring it to their grave. 
 
 ## Impediments
 
@@ -34,13 +34,18 @@ Unsure
 # Created by The Dead Men
 **Schoonover, Kevin**
 * State machine
+* Game mechanics
 
 **Robbins, Xander**
-* Story idea, player name
+* Story idea
+* Player name
 
 **Robertson, Jacob**
 * Level design
+* Object implementation
 
 **Kaliczak, Alexander**
 * Player model
+* Enemy model
+* Sound effects
 * Music, made by my wife Aeris Kaliczak
