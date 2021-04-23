@@ -38,6 +38,10 @@ Unsure
 * Game mechanics
 * Code advisor
 * Added typeface
+* Title screen
+* End screen
+* Lose screen
+* Menu
 
 **Robbins, Xander**
 * Story idea
