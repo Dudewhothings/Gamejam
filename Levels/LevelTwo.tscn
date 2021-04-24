@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/roguelikeCity_magenta.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scenes/Menu/Menu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/HUD/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Doors/Exit.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/music2.ogg" type="AudioStream" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "spritesheet_default.png 0"
@@ -678,3 +679,8 @@ position = Vector2( 4629.22, 544.615 )
 [node name="HUD" parent="UI" instance=ExtResource( 8 )]
 
 [node name="Menu" parent="UI" instance=ExtResource( 7 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI"]
+stream = ExtResource( 10 )
+volume_db = -10.0
+autoplay = true
