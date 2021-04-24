@@ -20,6 +20,11 @@ The theme is Every Death Counts
 
 
 ## Impediments
+**Robertson, Jacob**
+* For me, it was making the tilesheet. It was not as intuitive as I remember it being in the lesson.
+
+**Kaliczak, Alexander**
+* Working in a team environment rather then on your own was a new and rewarding experience. 
 
 ## Implementation
 **Features**
@@ -35,6 +40,10 @@ The theme is Every Death Counts
 * Player model made using [Pixel Art](https://www.pixilart.com/)
 * Music made with [Muse Score 3.6.2](https://musescore.org/en/3.6.2)
 * Font [Upheaval](https://www.dafont.com/upheaval.font) Created by Brian Kent
+* [Simplified Platformer Pack](https://kenney.nl/assets/simplified-platformer-pack) by Kenny
+* [Platformer Art: Extended Enemies](https://kenney.nl/assets/platformer-art-extended-enemies) by Kenny
+* [Abstract Platformer](https://kenney.nl/assets/abstract-platformer) by Kenny
+* [Roguelike Modern City](https://kenney.nl/assets/roguelike-modern-city) by Kenny
 
 ## References
 
