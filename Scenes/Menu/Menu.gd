@@ -5,7 +5,7 @@ extends Control
 # var a = 2
 # var b = "text"
 var player = null
-func _process(delta):
+func _process(_delta):
 	if player == null:
 		player = get_node_or_null("/root/World/Player_Container/Player")
 
@@ -26,11 +26,11 @@ func _on_Quit_pressed():
 
 func _on_Restart_Level_pressed():
 	if(Global.currentlevel == 1):
-		get_tree().change_scene("res://Levels/LevelOne.tscn")
+		assert(get_tree().change_scene("res://Levels/LevelOne.tscn") == OK)
 	if(Global.currentlevel == 2):
-		get_tree().change_scene("res://Levels/LevelTwo.tscn")
+		assert(get_tree().change_scene("res://Levels/LevelTwo.tscn") == OK)
 	if(Global.currentlevel == 3):
-		get_tree().change_scene("res://Levels/LevelThree.tscn")
+		assert(get_tree().change_scene("res://Levels/LevelThree.tscn") == OK)
 
 
 func _on_Reset_pressed():

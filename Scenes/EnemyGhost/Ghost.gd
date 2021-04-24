@@ -42,7 +42,7 @@ func _physics_process(_delta):
 				print(player.current_health)
 				
 				
-			move_and_slide(pVelocity, Vector2.UP)
+			move_and_slide(pVelocity, Vector2.UP) or false
 			update()
 		else:
 			if(ray.is_colliding()):

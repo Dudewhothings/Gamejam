@@ -12,10 +12,10 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if(playerlives <= 0 and onEndScreen == false):
 		onEndScreen = true
-		get_tree().change_scene("res://Levels/Loss.tscn")
+		assert(get_tree().change_scene("res://Levels/Loss.tscn") == OK)
 	
 
 func resetgame():
@@ -25,4 +25,4 @@ func resetgame():
 	LvlThreeComplete = false
 	currentlevel = 1
 	onEndScreen = false
-	get_tree().change_scene("res://Levels/LevelOne.tscn")
+	assert(get_tree().change_scene("res://Levels/LevelOne.tscn") == OK)

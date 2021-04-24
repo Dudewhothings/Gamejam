@@ -11,7 +11,7 @@ func _ready():
 	pass # Replace with function body.
 
 
-func _process(delta):
+func _process(_delta):
 	if get_node_or_null("/root/World/Player_Container/Player") != null:
 		player = get_node_or_null("/root/World/Player_Container/Player")
 		$Container/HP.text = "Health " + str(player.current_health)

@@ -12,7 +12,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if player == null:
 		player = get_node_or_null("/root/World/Player_Container/Player")
 	else:

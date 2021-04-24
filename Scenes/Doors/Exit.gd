@@ -8,13 +8,13 @@ func _on_Exit_body_entered(body):
 		if(Global.currentlevel == 1):
 			Global.LvlOneComplete = true
 			Global.currentlevel = 2
-			get_tree().change_scene("res://Levels/LevelTwo.tscn")
+			assert(get_tree().change_scene("res://Levels/LevelTwo.tscn") == OK)
 		elif(Global.currentlevel == 2):
 			Global.LvlTwoComplete = true
 			Global.currentlevel = 3
-			get_tree().change_scene("res://Levels/LevelThree.tscn")
+			assert(get_tree().change_scene("res://Levels/LevelThree.tscn") == OK)
 		elif(Global.currentlevel == 3):
 			Global.LvlThreeComplete = true
 			Global.currentlevel = 4
-			get_tree().change_scene("res://Levels/Victoryscreen.tscn")
+			assert(get_tree().change_scene("res://Levels/Victoryscreen.tscn") == OK)
 		
